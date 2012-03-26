@@ -14,7 +14,7 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      '/'
+      movies_path
     when /^the RottenPotatoes homepage$/
       '/movies'
     when /^(the )?Create New Movie page$/
