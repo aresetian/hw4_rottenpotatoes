@@ -63,12 +63,12 @@ describe MoviesController do
     end
   end
  
-  describe "GET new" do
-    it "assigns a new movie as @movie" do
-      get :new
-      assigns(:movie).should be_a_new(Movie)
-    end
-  end
+  # describe "GET new" do
+    # it "assigns a new movie as @movie" do
+      # get :new
+      # assigns(:movie).should be_a_new(Movie)
+    # end
+  # end
  
   describe "GET edit" do
     it "assigns the requested movie as @movie" do
@@ -140,14 +140,14 @@ describe MoviesController do
     end
   end
   
-  describe "GET same_director" do
-    describe "with director" do
-      it "assigns all movies as @movies" do
-        movie = Movie.create! valid_attributes
-        get :same_director, :id => movie.id
-        assigns(:movies).should eq([movie])
-      end
-    end
+  # describe "GET same_director" do
+    # describe "with director" do
+      # it "assigns all movies as @movies" do
+        # movie = Movie.create! valid_attributes
+        # get :same_director, :id => movie.id
+        # assigns(:movies).should eq([movie])
+      # end
+    # end
     
     describe "without director" do
       it "redirects to the homepage" do
